@@ -1,5 +1,5 @@
 // Data
-[
+const students = [
   {
     id: 1,
     name: "Leanne Graham",
@@ -231,3 +231,5 @@
     },
   },
 ];
+
+module.exports = students;

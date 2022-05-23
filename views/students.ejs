@@ -10,5 +10,13 @@
     <h1><%= headerTitle %></h1>
     <a href="/">Home</a>
     <a href="/students">Students</a>
+    <% data.map ((student, index) => {%>
+    <div>
+      <hr />
+      Student Name: <%= student.name %> <br />
+      Student Email: <%= student.email %> <br />
+      Student Company: <%= student.company.name %> <br />
+    </div>
+    <% }) %>
   </body>
 </html>

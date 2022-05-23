@@ -28,7 +28,7 @@ app.get("/students", (req, res) => {
   res.render("students", {
     data: studentsData,
     pageTitle: "Students Page",
-    headerTitle: "Student Data",
+    headerTitle: "Student Directory",
   });
 });
 
