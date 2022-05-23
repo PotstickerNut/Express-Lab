@@ -32,6 +32,18 @@ app.get("/students", (req, res) => {
   });
 });
 
+app.get("/students/:id", (req, res) => {
+  const result = students.filter(
+    (student) => student.id === Number(req.params.id)
+  );
+  res.send(result);
+});
+
+app.get("/students/search/:name", (req, res) => {
+  const result = students.filter((student) => student.name === req.params.name);
+  res.send(result);
+});
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
