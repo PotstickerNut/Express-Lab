@@ -52,6 +52,10 @@ app.get("/comedy-hour", (req, res) => {
   res.render("comedy-hour", { pageData: pagesData });
 });
 
+app.get("/muppets", (req, res) => {
+  res.render("muppets", { pageData: pagesData });
+});
+
 // list of all students
 app.get("/students", (req, res) => {
   res.render("students", {

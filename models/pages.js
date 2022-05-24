@@ -6,6 +6,7 @@ const pages = [
   { href: "/music-room", name: "Music Room" },
   { href: "/rubber-ducky", name: "Rubber Ducky" },
   { href: "/comedy-hour", name: "Comedy Hour" },
+  { href: "/muppets", name: "The Muppets" },
 ];
 
 module.exports = pages;
