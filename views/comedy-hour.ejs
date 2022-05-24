@@ -8,5 +8,8 @@
   </head>
   <body>
     <h1>Comedy Hour</h1>
+    <% pageData.map((page, index) => { %>
+    <a href="<%= page.href %>"><%= page.name %></a>
+    <% }) %>
   </body>
 </html>

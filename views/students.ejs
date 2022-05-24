@@ -8,9 +8,9 @@
   </head>
   <body>
     <h1><%= headerTitle %></h1>
-    <a href="/">Home</a>
-    <a href="/students">Students</a>
-    <% data.map ((student, index) => {%>
+    <% pageData.map((page, index) => { %>
+    <a href="<%= page.href %>"><%= page.name %></a>
+    <% }) %> <% data.map ((student, index) => {%>
     <div>
       <hr />
       Student Name: <%= student.name %> <br />
