@@ -1,5 +1,6 @@
 const express = require("express");
 const getData = require("./controllers/getData");
+const getPages = require("./controllers/getPages");
 const students = require("./models/students");
 
 const app = express();
@@ -25,7 +26,24 @@ app.get("/", (req, res) => {
   });
 });
 
-app.get("/events", (req, res) => {});
+app.get("/events", (req, res) => {
+  res.render("events", { pageTitle: "Events", headerTitle: "Events Calender" });
+});
+
+app.get("/music-room", (req, res) => {
+  res.render("music-room", {
+    pageTitle: "The music room",
+    headerTitle: "The Music Room",
+  });
+});
+
+app.get("/rubber-ducky", (req, res) => {
+  res.render("rubber-ducky");
+});
+
+app.get("/comedy-hour", (req, res) => {
+  res.render("comedy-hour");
+});
 
 // list of all students
 app.get("/students", (req, res) => {
