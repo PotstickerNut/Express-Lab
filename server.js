@@ -29,7 +29,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/events", (req, res) => {
-  res.render("events", {
+  res.render("home", {
     pageData: pagesData,
     pageTitle: "Events",
     headerTitle: "Events Calender",
@@ -37,7 +37,7 @@ app.get("/events", (req, res) => {
 });
 
 app.get("/music-room", (req, res) => {
-  res.render("music-room", {
+  res.render("home", {
     pageData: pagesData,
     pageTitle: "The music room",
     headerTitle: "The Music Room",
@@ -45,23 +45,43 @@ app.get("/music-room", (req, res) => {
 });
 
 app.get("/rubber-ducky", (req, res) => {
-  res.render("rubber-ducky", { pageData: pagesData });
+  res.render("home", {
+    pageData: pagesData,
+    pageTitle: "Rubber Ducky",
+    headerTitle: "Rubber Ducky",
+  });
 });
 
 app.get("/comedy-hour", (req, res) => {
-  res.render("comedy-hour", { pageData: pagesData });
+  res.render("home", {
+    pageData: pagesData,
+    pageTitle: "Comedy Hour",
+    headerTitle: "Comedy Hour",
+  });
 });
 
 app.get("/muppets", (req, res) => {
-  res.render("muppets", { pageData: pagesData });
+  res.render("home", {
+    pageData: pagesData,
+    pageTitle: "Muppets",
+    headerTitle: "The Muppets",
+  });
 });
 
 app.get("/dinner", (req, res) => {
-  res.render("dinner", { pageData: pagesData });
+  res.render("home", {
+    pageData: pagesData,
+    pageTitle: "Dinner",
+    headerTitle: "Dinner",
+  });
 });
 
 app.get("/scribble", (req, res) => {
-  res.render("scribble", { pageData: pagesData });
+  res.render("home", {
+    pageData: pagesData,
+    pageTitle: "Scribble",
+    headerTitle: "Scribble",
+  });
 });
 
 // list of all students
